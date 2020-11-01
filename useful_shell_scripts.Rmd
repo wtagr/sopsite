@@ -1,0 +1,37 @@
+# List of useful shell commands{#shell}
+
+## Navigating (beginner) {#shell_nav}
+
+1. ssh- creates a secure shell connection to another computer on the network. You will be prompted for a passwod after entering.   
+"$ ssh <CMRR username>@lnpi14@cmrr.umn.edu"
+2. cd- changes directories  
+"$ cd <directory to move to>"  
+"$ cd /home"
+    
+Useful tips
+  a. cd without an argument sends you home
+  b. .. is the argument to bring you back up one directory
+  c. ~ means home and is useful when you are writing scripts to make sure you're consistently referenceing the same directory.
+      "$ cd ~/data/analysis/"
+3. ls- lists all visible files in a directory  
+"$ ls /home"  
+Useful tips:  
+  a. Flags: -a lists everything plus normally invisible files, -l lists the last modified dates
+  b. ls without any arguments lists visible contents in current directory.
+4. less- is used to strictly read files without editing options.
+"$ less $<$file name$>$"
+
+## File manipulatio{#shell_file}  
+1. chmod- adds file permissions   
+Useful flags:  
+  a. -x enables execution rights
+  b. -w enables writing rights
+  c. -r enables reading rights
+2. cp- copies a file to another place
+3. find- searches a set of directories for a file name
+4. mkdir- creates an empty directory
+5. mv- moves a file or directory
+6. rm- removes a file
+7. rmdir- removes an empty directory
+8. vi- opens a file with writing privileges
+9. ./$<$file name$>$- runs a custom bash script with the name '$<$file name$>$'.
