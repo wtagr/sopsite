@@ -24,3 +24,6 @@ installing-anyconnect-2
 MSI
 cmrr
 first-time-cmrr-users
+shell
+shell_nav
+shell_file

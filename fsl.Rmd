@@ -1,0 +1,16 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# FSL basics
+
+## Visualizing files
+
+## Registering files to standard spaces
+1. epi_reg
+2. 
+
+## Creating atlas masks

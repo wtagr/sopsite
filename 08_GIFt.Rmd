@@ -1,0 +1,14 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# GIFT {#GIFT}
+
+Learning about GIFT
+
+## Algorithms  
+### Infomax
+
+### Spatially constrained ICA
+
