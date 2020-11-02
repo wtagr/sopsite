@@ -1,14 +1,29 @@
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # GIFT {#GIFT}
 
-Learning about GIFT
+## Overview of GIFT and it's tools  
 
-## Algorithms  
-### Infomax
+- ICA's-many algorithms
+  - GIG-ICA-
+  - Infomax-
 
-### Spatially constrained ICA
 
+## Opening GIFT
+1. GIFT is a toolbox built in matlab. In order to enter matlab from command line enter 'matlab'. To specify the edition type 'matlab2017b' or equivalent. 
+2. Once in matlab it's convenient to load all of the toolboxes you might use for fMRI analyses at once. This is held in a matlab script and can be called using `run('~timothy/matlab/startup.m')`
+3. open GIFT by entering `groupica`. This will open a GUI interface.
+
+## Running Infomax ICA {#infomax}
+Infomax is the most basic ICA algorthim and takes the fewest inputs. Simply specify the files and number of independent components you want to run.
+
+gica_cmd --data ‘C:\sub001.nii’ ‘C:\sub002.nii --n  15 
+
+## Running GIG-ICA analysis {#GIG}
+GIG-ICA uses the spatial maps generated from Infomax run, so before running GIG-ICA, go through and run the entire Infomax method. 
+gica_cmd --data ‘C:\sub001.nii’ ‘C:\sub002.nii’ ‘C:\sub003.nii’ --templates ‘C:\spatial_ref.nii’ --a gig-ica
+
+
+## ICA output files
+
+## 

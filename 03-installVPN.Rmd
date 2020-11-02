@@ -4,7 +4,7 @@
 In order to access either MSI or CMRR from off-campus you must log in to MSI's network with a VPN (a VPN is a Virtual Private Network. It is how you can access the MSI remotely.) The university recommends using Cisco AnyConnect. Here are the steps to set up a Cisco VPN. The hyperlink will also be in the footnotes (https://it.umn.edu/services-technologies/virtual-private-network-vpn). Follow the URL hyperlink in the previous sentence. You will be brought to a page that all the downloads for different operating systems as shown below. Locate the download for your operating system and click "Download". The download file should take a few seconds to fully download. The next steps will depend on the OS you are using.
 
 ```{r} 
-knitr::include_graphics('/home/christian/Research/sopsite/Anyconnect_Downloads.png')
+knitr::include_graphics('/home/christian/Research/sopsite/Images/Anyconnect_Downloads.png')
 ```
         \caption{An image of the website that the above url links to. Notice that downloads are available for different operating systems. make sure to choose the download for the correct operating system.}
         \label{fig:AnyCon_download}
@@ -19,7 +19,7 @@ knitr::include_graphics('/home/christian/Research/sopsite/Anyconnect_Downloads.p
 1. Navigate to Cisco AnyConnect Secure Mobility Client from the Start menu. Start menu button in Windows 10 > All apps > Cisco > Cisco AnyConnect Secure Mobility Client
     
     ```{r} 
-knitr::include_graphics('/home/christian/Research/sopsite/Win_anyconnect.png')
+knitr::include_graphics('/home/christian/Research/sopsite/Images/Win_anyconnect.png')
 ```
 \caption{Screenshot of choosing the two optinos necessary to access the MSI (top) and CMRR (bottom) VPN's.}
 \label{fig:Win_any}

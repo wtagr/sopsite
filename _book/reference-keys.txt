@@ -27,3 +27,14 @@ first-time-cmrr-users
 shell
 shell_nav
 shell_file
+GIFT
+overview-of-gift-and-its-tools
+opening-gift
+infomax
+GIG
+ica-output-files
+section
+fsl-basics
+visualizing-files
+registering-files-to-standard-spaces
+creating-atlas-masks

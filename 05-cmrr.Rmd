@@ -13,7 +13,7 @@ For CMRR questions go \href{https://www.cmrr.umn.edu/computeruser/}{here}.
 3. Select 'Create a new virtual desktop' (The left most option)
 4. Then you are in the CMRR login computer!
 ```{r} 
-knitr::include_graphics('/home/christian/Research/sopsite/NX_create_VM.png')
+knitr::include_graphics('/home/christian/Research/sopsite/Images/NX_create_VM.png')
 ```
 \caption{Screenshot of NoMachine. Here you should select the left most option to create a new virtual desktop. This image has a penguin because I was running Linux at the time, your's might not necessarily have a penguin on it.}
 \label{fig:NX_create_desktop}
