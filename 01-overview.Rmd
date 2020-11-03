@@ -19,3 +19,6 @@ knitr::kable(
 ```
 
 You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+All large datasets and computationallly intensive processing steps for fMRI analysis takes place via computers at the Minnesota Supercomputing Institute (MSI) or the Center for Magnetic Resonance Research (CMRR). This guide will layout the steps you need to take in order to access MSI. Subsequent manuals will address how to navigate the MSI and find stored data, and ultimately run image processing and analyses through MSI.
+

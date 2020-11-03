@@ -1,7 +1,12 @@
-# Accessing MSI
+# Setting up and accessing MSI {#MSI}
+MSI questions are answered \href{https://www.msi.umn.edu/support/faq}{here} 
 
-Some _significant_ applications are demonstrated in this chapter.
+1. Go to this \href{https://nice-dev.msi.umn.edu/enginframe/vdi/vdi.xml?_uri=//com.enginframe.interactive/list.sessions}{website} and login using your MSI credentials (Are these x500 or same as CMRR????)
+    
+2. On the left side-bar click "Download DCV client." Select the appropriate version for your computer and install it. Please uninstall any previous version of NICE first. Note that installing the client on Linux will uninstall any other version of VirtualGL/TurboVNC you have installed. If you are installing on Mac, you need to control-click on "DCV Endstation" in Applications and open it, and then accept the unsigned software warning. This only needs to be done once.
+    
+3. In the top right corner of the page, there is a link labeled "Settings." There you will be able to set the default display resolution of the NICE session to suit your needs, so if the NICE session takes up too much space on your screen, or isn't large enough for you to see very well, it can be changed here.
 
-## Example one
+4. After you have installed the client, back on the NICE website, click one of the options associated with the amount of time, memory, and GPU usage you require. You may be confronted with an error with the VNC signature. If this is the case, just click yes and proceed. Your web browser should then launch a VNC viewer with a desktop.
 
-## Example two
+5. From there, you can open a terminal, load modules, and run any lab-installed software. To check that DCV acceleration is working, open a terminal and run "dcvtest".

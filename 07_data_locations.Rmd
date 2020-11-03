@@ -1,0 +1,32 @@
+---
+title: "07_Data_locations"
+author: "Christian Coffman"
+date: "11/1/2020"
+output: html_document
+---
+
+\section{Data locations}
+\subsection{CMRR}
+\subsubsection{BRIDGES}
+cd ' \tilde{ }/../../lnpi14-raid4/bids/275\_BRIDGES/HCP4\_output'
+
+\subsubsection{Programs}
+\textbf{Matlab} \newline
+In Bash type 'matlab$<$year$>$' to see years hit the tab key after matlab and it will show you the list.
+
+\subsubsection{Scripts for loading toolkits}
+\textbf{GIFT} \newline
+in Matlab run $>>$ run('~timothy/matlab/startup.m') 
+
+then run $>>groupica$
+
+groupica
+
+\subsection{MSI}
+\subsubsection{BRIDGES}
+
+\subsubsection{ABCD}
+
+\subsubsection{Programs}
+
+\subsubsection{Scripts for loading toolkits}
