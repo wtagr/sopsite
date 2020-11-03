@@ -144,6 +144,43 @@
             "type": "book"
         },
         {
+            "URL": "http://shiny.rstudio.com",
+            "author": [
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Allaire",
+                    "given": "JJ"
+                },
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "McPherson",
+                    "given": "Jonathan"
+                }
+            ],
+            "id": "R-shiny",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "R package version 1.5.0",
+            "title": "Shiny: Web application framework for r",
+            "title-short": "Shiny",
+            "type": "book"
+        },
+        {
             "URL": "https://github.com/rstudio/bookdown",
             "author": [
                 {

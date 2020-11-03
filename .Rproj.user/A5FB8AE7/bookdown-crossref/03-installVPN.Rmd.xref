@@ -1,5 +1,11 @@
-h1:install-anyconnect Install AnyConnect
+h1:installvpn Install VPN
+h2:system-non-specific-downloading-anyconnect-for-installation System non-specific: Downloading AnyConnect for installation
 h2:windows Windows
+h3:installing-anyconnect Installing AnyConnect
+h3:connecting-to-umn-vpn Connecting to UMN VPN
 h2:mac Mac
+h3:installing-anyconnect-1 Installing AnyConnect
+h3:connecting-to-umn-vpn-1 Connecting to Umn VPN
 h2:linux Linux
+h3:installing-anyconnect-2 Installing AnyConnect
 

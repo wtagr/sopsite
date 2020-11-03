@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 List of useful shell commands | SOP manual for fMRI analysis: Part 1</title>
+  <title>Chapter 10 List of useful shell commands | SOP manual for fMRI analysis: Part 1</title>
   <meta name="description" content="This is a series of SOP files of using the facilities to start your research in the Division of Biostatistics in SPH@UMN, esp. focusing on fMRI image analysis." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 List of useful shell commands | SOP manual for fMRI analysis: Part 1" />
+  <meta property="og:title" content="Chapter 10 List of useful shell commands | SOP manual for fMRI analysis: Part 1" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 List of useful shell commands | SOP manual for fMRI analysis: Part 1" />
+  <meta name="twitter:title" content="Chapter 10 List of useful shell commands | SOP manual for fMRI analysis: Part 1" />
   
   <meta name="twitter:description" content="This is a series of SOP files of using the facilities to start your research in the Division of Biostatistics in SPH@UMN, esp. focusing on fMRI image analysis." />
   
@@ -31,8 +31,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="references.html"/>
+<link rel="prev" href="fsl-basics.html"/>
 
+<script src="libs/header-attrs-2.4/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,23 +52,20 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -87,7 +85,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -139,29 +137,66 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Overview</a></li>
 <li class="chapter" data-level="3" data-path="VPN.html"><a href="VPN.html"><i class="fa fa-check"></i><b>3</b> Acccessing UMN’s VPN and MSI or CMRR</a></li>
-<li class="chapter" data-level="4" data-path="installvpn.html"><a href="installvpn.html"><i class="fa fa-check"></i><b>4</b> Install VPN</a><ul>
+<li class="chapter" data-level="4" data-path="installvpn.html"><a href="installvpn.html"><i class="fa fa-check"></i><b>4</b> Install VPN</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="installvpn.html"><a href="installvpn.html#system-non-specific-downloading-anyconnect-for-installation"><i class="fa fa-check"></i><b>4.1</b> System non-specific: Downloading AnyConnect for installation</a></li>
-<li class="chapter" data-level="4.2" data-path="installvpn.html"><a href="installvpn.html#windows"><i class="fa fa-check"></i><b>4.2</b> Windows</a><ul>
+<li class="chapter" data-level="4.2" data-path="installvpn.html"><a href="installvpn.html#windows"><i class="fa fa-check"></i><b>4.2</b> Windows</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="installvpn.html"><a href="installvpn.html#installing-anyconnect"><i class="fa fa-check"></i><b>4.2.1</b> Installing AnyConnect</a></li>
 <li class="chapter" data-level="4.2.2" data-path="installvpn.html"><a href="installvpn.html#connecting-to-umn-vpn"><i class="fa fa-check"></i><b>4.2.2</b> Connecting to UMN VPN</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="installvpn.html"><a href="installvpn.html#mac"><i class="fa fa-check"></i><b>4.3</b> Mac</a><ul>
+<li class="chapter" data-level="4.3" data-path="installvpn.html"><a href="installvpn.html#mac"><i class="fa fa-check"></i><b>4.3</b> Mac</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="installvpn.html"><a href="installvpn.html#installing-anyconnect-1"><i class="fa fa-check"></i><b>4.3.1</b> Installing AnyConnect</a></li>
 <li class="chapter" data-level="4.3.2" data-path="installvpn.html"><a href="installvpn.html#connecting-to-umn-vpn-1"><i class="fa fa-check"></i><b>4.3.2</b> Connecting to Umn VPN</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="installvpn.html"><a href="installvpn.html#linux"><i class="fa fa-check"></i><b>4.4</b> Linux</a><ul>
+<li class="chapter" data-level="4.4" data-path="installvpn.html"><a href="installvpn.html#linux"><i class="fa fa-check"></i><b>4.4</b> Linux</a>
+<ul>
 <li class="chapter" data-level="4.4.1" data-path="installvpn.html"><a href="installvpn.html#installing-anyconnect-2"><i class="fa fa-check"></i><b>4.4.1</b> Installing AnyConnect</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="MSI.html"><a href="MSI.html"><i class="fa fa-check"></i><b>5</b> Setting up and accessing MSI</a></li>
-<li class="chapter" data-level="6" data-path="cmrr.html"><a href="cmrr.html"><i class="fa fa-check"></i><b>6</b> CMRR</a><ul>
+<li class="chapter" data-level="6" data-path="cmrr.html"><a href="cmrr.html"><i class="fa fa-check"></i><b>6</b> CMRR</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="cmrr.html"><a href="cmrr.html#first-time-cmrr-users"><i class="fa fa-check"></i><b>6.1</b> First time CMRR users</a></li>
 <li class="chapter" data-level="6.2" data-path="cmrr.html"><a href="cmrr.html#accessing-cmrr"><i class="fa fa-check"></i><b>6.2</b> Accessing CMRR</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="7" data-path="shell.html"><a href="shell.html"><i class="fa fa-check"></i><b>7</b> List of useful shell commands</a><ul>
-<li class="chapter" data-level="7.1" data-path="shell.html"><a href="shell.html#shell_nav"><i class="fa fa-check"></i><b>7.1</b> Navigating (beginner)</a></li>
-<li class="chapter" data-level="7.2" data-path="shell.html"><a href="shell.html#shell_file"><i class="fa fa-check"></i><b>7.2</b> File manipulatio</a></li>
+<li class="chapter" data-level="7" data-path="data-locations.html"><a href="data-locations.html"><i class="fa fa-check"></i><b>7</b> Data locations</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="data-locations.html"><a href="data-locations.html#cmrr-1"><i class="fa fa-check"></i><b>7.1</b> CMRR</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="data-locations.html"><a href="data-locations.html#bridges"><i class="fa fa-check"></i><b>7.1.1</b> BRIDGES</a></li>
+<li class="chapter" data-level="7.1.2" data-path="data-locations.html"><a href="data-locations.html#programs"><i class="fa fa-check"></i><b>7.1.2</b> Programs</a></li>
+<li class="chapter" data-level="7.1.3" data-path="data-locations.html"><a href="data-locations.html#scripts-for-loading-toolkits"><i class="fa fa-check"></i><b>7.1.3</b> Scripts for loading toolkits</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="data-locations.html"><a href="data-locations.html#msi"><i class="fa fa-check"></i><b>7.2</b> MSI</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="data-locations.html"><a href="data-locations.html#bridges-1"><i class="fa fa-check"></i><b>7.2.1</b> BRIDGES</a></li>
+<li class="chapter" data-level="7.2.2" data-path="data-locations.html"><a href="data-locations.html#abcd"><i class="fa fa-check"></i><b>7.2.2</b> ABCD</a></li>
+<li class="chapter" data-level="7.2.3" data-path="data-locations.html"><a href="data-locations.html#programs-1"><i class="fa fa-check"></i><b>7.2.3</b> Programs</a></li>
+<li class="chapter" data-level="7.2.4" data-path="data-locations.html"><a href="data-locations.html#scripts-for-loading-toolkits-1"><i class="fa fa-check"></i><b>7.2.4</b> Scripts for loading toolkits</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="GIFT.html"><a href="GIFT.html"><i class="fa fa-check"></i><b>8</b> GIFT</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="GIFT.html"><a href="GIFT.html#overview-of-gift-and-its-tools"><i class="fa fa-check"></i><b>8.1</b> Overview of GIFT and it’s tools</a></li>
+<li class="chapter" data-level="8.2" data-path="GIFT.html"><a href="GIFT.html#opening-gift"><i class="fa fa-check"></i><b>8.2</b> Opening GIFT</a></li>
+<li class="chapter" data-level="8.3" data-path="GIFT.html"><a href="GIFT.html#infomax"><i class="fa fa-check"></i><b>8.3</b> Running Infomax ICA</a></li>
+<li class="chapter" data-level="8.4" data-path="GIFT.html"><a href="GIFT.html#GIG"><i class="fa fa-check"></i><b>8.4</b> Running GIG-ICA analysis</a></li>
+<li class="chapter" data-level="8.5" data-path="GIFT.html"><a href="GIFT.html#ica-output-files"><i class="fa fa-check"></i><b>8.5</b> ICA output files</a></li>
+<li class="chapter" data-level="8.6" data-path="GIFT.html"><a href="GIFT.html#section"><i class="fa fa-check"></i><b>8.6</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="fsl-basics.html"><a href="fsl-basics.html"><i class="fa fa-check"></i><b>9</b> FSL basics</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="fsl-basics.html"><a href="fsl-basics.html#visualizing-files"><i class="fa fa-check"></i><b>9.1</b> Visualizing files</a></li>
+<li class="chapter" data-level="9.2" data-path="fsl-basics.html"><a href="fsl-basics.html#registering-files-to-standard-spaces"><i class="fa fa-check"></i><b>9.2</b> Registering files to standard spaces</a></li>
+<li class="chapter" data-level="9.3" data-path="fsl-basics.html"><a href="fsl-basics.html#creating-atlas-masks"><i class="fa fa-check"></i><b>9.3</b> Creating atlas masks</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="shell.html"><a href="shell.html"><i class="fa fa-check"></i><b>10</b> List of useful shell commands</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="shell.html"><a href="shell.html#shell_nav"><i class="fa fa-check"></i><b>10.1</b> Navigating (beginner)</a></li>
+<li class="chapter" data-level="10.2" data-path="shell.html"><a href="shell.html#shell_file"><i class="fa fa-check"></i><b>10.2</b> File manipulatio</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -183,10 +218,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="shell" class="section level1">
-<h1><span class="header-section-number">Chapter 7</span> List of useful shell commands</h1>
-<div id="shell_nav" class="section level2">
-<h2><span class="header-section-number">7.1</span> Navigating (beginner)</h2>
+<div id="shell" class="section level1" number="10">
+<h1><span class="header-section-number">Chapter 10</span> List of useful shell commands</h1>
+<div id="shell_nav" class="section level2" number="10.1">
+<h2><span class="header-section-number">10.1</span> Navigating (beginner)</h2>
 <ol style="list-style-type: decimal">
 <li>ssh- creates a secure shell connection to another computer on the network. You will be prompted for a passwod after entering.<br />
 “$ ssh <CMRR username><span class="citation">(<span class="citeproc-not-found" data-reference-id="lnpi14"><strong>???</strong></span>)</span><span class="citation">(<span class="citeproc-not-found" data-reference-id="cmrr.umn.edu"><strong>???</strong></span>)</span>”</li>
@@ -207,8 +242,8 @@ b. ls without any arguments lists visible contents in current directory.
 4. less- is used to strictly read files without editing options.
 “$ less <span class="math inline">\(&lt;\)</span>file name<span class="math inline">\(&gt;\)</span>”</p>
 </div>
-<div id="shell_file" class="section level2">
-<h2><span class="header-section-number">7.2</span> File manipulatio</h2>
+<div id="shell_file" class="section level2" number="10.2">
+<h2><span class="header-section-number">10.2</span> File manipulatio</h2>
 <ol style="list-style-type: decimal">
 <li>chmod- adds file permissions<br />
 Useful flags:<br />
@@ -230,7 +265,7 @@ Useful flags:<br />
 <li>./<span class="math inline">\(&lt;\)</span>file name<span class="math inline">\(&gt;\)</span>- runs a custom bash script with the name ‘<span class="math inline">\(&lt;\)</span>file name<span class="math inline">\(&gt;\)</span>’.</li>
 </ol>
 
-<div id="refs" class="references">
+<div id="refs" class="references hanging-indent">
 <div>
 <p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.org/knitr/">http://yihui.org/knitr/</a>.</p>
 </div>
@@ -245,7 +280,7 @@ Useful flags:<br />
           </div>
         </div>
       </div>
-<a href="references.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="fsl-basics.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>

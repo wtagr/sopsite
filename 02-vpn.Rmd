@@ -5,7 +5,7 @@ For MSI you can access with just Split Tunnel, and for CMRR you will need to use
     
     
 ```{r} 
-knitr::include_graphics('/home/christian/Research/sopsite/Images/CMRR_log_reg.png')
+knitr::include_graphics('./Images/CMRR_log_reg.png')
 ```
 {#fig:CMRR_login_regis}
   

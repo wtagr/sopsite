@@ -32,7 +32,8 @@
   
   
 <link rel="prev" href="VPN.html"/>
-<link rel="next" href="accessing-cmrr.html"/>
+<link rel="next" href="MSI.html"/>
+<script src="libs/header-attrs-2.4/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,23 +52,20 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -87,7 +85,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -139,24 +137,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Overview</a></li>
 <li class="chapter" data-level="3" data-path="VPN.html"><a href="VPN.html"><i class="fa fa-check"></i><b>3</b> Acccessing UMN’s VPN and MSI or CMRR</a></li>
-<li class="chapter" data-level="4" data-path="installvpn.html"><a href="installvpn.html"><i class="fa fa-check"></i><b>4</b> Install VPN</a><ul>
+<li class="chapter" data-level="4" data-path="installvpn.html"><a href="installvpn.html"><i class="fa fa-check"></i><b>4</b> Install VPN</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="installvpn.html"><a href="installvpn.html#system-non-specific-downloading-anyconnect-for-installation"><i class="fa fa-check"></i><b>4.1</b> System non-specific: Downloading AnyConnect for installation</a></li>
-<li class="chapter" data-level="4.2" data-path="installvpn.html"><a href="installvpn.html#windows"><i class="fa fa-check"></i><b>4.2</b> Windows</a><ul>
+<li class="chapter" data-level="4.2" data-path="installvpn.html"><a href="installvpn.html#windows"><i class="fa fa-check"></i><b>4.2</b> Windows</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="installvpn.html"><a href="installvpn.html#installing-anyconnect"><i class="fa fa-check"></i><b>4.2.1</b> Installing AnyConnect</a></li>
 <li class="chapter" data-level="4.2.2" data-path="installvpn.html"><a href="installvpn.html#connecting-to-umn-vpn"><i class="fa fa-check"></i><b>4.2.2</b> Connecting to UMN VPN</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="installvpn.html"><a href="installvpn.html#mac"><i class="fa fa-check"></i><b>4.3</b> Mac</a><ul>
+<li class="chapter" data-level="4.3" data-path="installvpn.html"><a href="installvpn.html#mac"><i class="fa fa-check"></i><b>4.3</b> Mac</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="installvpn.html"><a href="installvpn.html#installing-anyconnect-1"><i class="fa fa-check"></i><b>4.3.1</b> Installing AnyConnect</a></li>
 <li class="chapter" data-level="4.3.2" data-path="installvpn.html"><a href="installvpn.html#connecting-to-umn-vpn-1"><i class="fa fa-check"></i><b>4.3.2</b> Connecting to Umn VPN</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="installvpn.html"><a href="installvpn.html#linux"><i class="fa fa-check"></i><b>4.4</b> Linux</a><ul>
+<li class="chapter" data-level="4.4" data-path="installvpn.html"><a href="installvpn.html#linux"><i class="fa fa-check"></i><b>4.4</b> Linux</a>
+<ul>
 <li class="chapter" data-level="4.4.1" data-path="installvpn.html"><a href="installvpn.html#installing-anyconnect-2"><i class="fa fa-check"></i><b>4.4.1</b> Installing AnyConnect</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="accessing-cmrr.html"><a href="accessing-cmrr.html"><i class="fa fa-check"></i><b>5</b> Accessing CMRR</a><ul>
-<li class="chapter" data-level="5.1" data-path="accessing-cmrr.html"><a href="accessing-cmrr.html#vpn-envs"><i class="fa fa-check"></i><b>5.1</b> VPN envs</a></li>
+<li class="chapter" data-level="5" data-path="MSI.html"><a href="MSI.html"><i class="fa fa-check"></i><b>5</b> Setting up and accessing MSI</a></li>
+<li class="chapter" data-level="6" data-path="cmrr.html"><a href="cmrr.html"><i class="fa fa-check"></i><b>6</b> CMRR</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="cmrr.html"><a href="cmrr.html#first-time-cmrr-users"><i class="fa fa-check"></i><b>6.1</b> First time CMRR users</a></li>
+<li class="chapter" data-level="6.2" data-path="cmrr.html"><a href="cmrr.html#accessing-cmrr"><i class="fa fa-check"></i><b>6.2</b> Accessing CMRR</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="data-locations.html"><a href="data-locations.html"><i class="fa fa-check"></i><b>7</b> Data locations</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="data-locations.html"><a href="data-locations.html#cmrr-1"><i class="fa fa-check"></i><b>7.1</b> CMRR</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="data-locations.html"><a href="data-locations.html#bridges"><i class="fa fa-check"></i><b>7.1.1</b> BRIDGES</a></li>
+<li class="chapter" data-level="7.1.2" data-path="data-locations.html"><a href="data-locations.html#programs"><i class="fa fa-check"></i><b>7.1.2</b> Programs</a></li>
+<li class="chapter" data-level="7.1.3" data-path="data-locations.html"><a href="data-locations.html#scripts-for-loading-toolkits"><i class="fa fa-check"></i><b>7.1.3</b> Scripts for loading toolkits</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="data-locations.html"><a href="data-locations.html#msi"><i class="fa fa-check"></i><b>7.2</b> MSI</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="data-locations.html"><a href="data-locations.html#bridges-1"><i class="fa fa-check"></i><b>7.2.1</b> BRIDGES</a></li>
+<li class="chapter" data-level="7.2.2" data-path="data-locations.html"><a href="data-locations.html#abcd"><i class="fa fa-check"></i><b>7.2.2</b> ABCD</a></li>
+<li class="chapter" data-level="7.2.3" data-path="data-locations.html"><a href="data-locations.html#programs-1"><i class="fa fa-check"></i><b>7.2.3</b> Programs</a></li>
+<li class="chapter" data-level="7.2.4" data-path="data-locations.html"><a href="data-locations.html#scripts-for-loading-toolkits-1"><i class="fa fa-check"></i><b>7.2.4</b> Scripts for loading toolkits</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="GIFT.html"><a href="GIFT.html"><i class="fa fa-check"></i><b>8</b> GIFT</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="GIFT.html"><a href="GIFT.html#overview-of-gift-and-its-tools"><i class="fa fa-check"></i><b>8.1</b> Overview of GIFT and it’s tools</a></li>
+<li class="chapter" data-level="8.2" data-path="GIFT.html"><a href="GIFT.html#opening-gift"><i class="fa fa-check"></i><b>8.2</b> Opening GIFT</a></li>
+<li class="chapter" data-level="8.3" data-path="GIFT.html"><a href="GIFT.html#infomax"><i class="fa fa-check"></i><b>8.3</b> Running Infomax ICA</a></li>
+<li class="chapter" data-level="8.4" data-path="GIFT.html"><a href="GIFT.html#GIG"><i class="fa fa-check"></i><b>8.4</b> Running GIG-ICA analysis</a></li>
+<li class="chapter" data-level="8.5" data-path="GIFT.html"><a href="GIFT.html#ica-output-files"><i class="fa fa-check"></i><b>8.5</b> ICA output files</a></li>
+<li class="chapter" data-level="8.6" data-path="GIFT.html"><a href="GIFT.html#section"><i class="fa fa-check"></i><b>8.6</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="fsl-basics.html"><a href="fsl-basics.html"><i class="fa fa-check"></i><b>9</b> FSL basics</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="fsl-basics.html"><a href="fsl-basics.html#visualizing-files"><i class="fa fa-check"></i><b>9.1</b> Visualizing files</a></li>
+<li class="chapter" data-level="9.2" data-path="fsl-basics.html"><a href="fsl-basics.html#registering-files-to-standard-spaces"><i class="fa fa-check"></i><b>9.2</b> Registering files to standard spaces</a></li>
+<li class="chapter" data-level="9.3" data-path="fsl-basics.html"><a href="fsl-basics.html#creating-atlas-masks"><i class="fa fa-check"></i><b>9.3</b> Creating atlas masks</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="shell.html"><a href="shell.html"><i class="fa fa-check"></i><b>10</b> List of useful shell commands</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="shell.html"><a href="shell.html#shell_nav"><i class="fa fa-check"></i><b>10.1</b> Navigating (beginner)</a></li>
+<li class="chapter" data-level="10.2" data-path="shell.html"><a href="shell.html#shell_file"><i class="fa fa-check"></i><b>10.2</b> File manipulatio</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -177,19 +218,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="installvpn" class="section level1">
+<div id="installvpn" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Install VPN</h1>
-<div id="system-non-specific-downloading-anyconnect-for-installation" class="section level2">
+<div id="system-non-specific-downloading-anyconnect-for-installation" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> System non-specific: Downloading AnyConnect for installation</h2>
 <p>In order to access either MSI or CMRR from off-campus you must log in to MSI’s network with a VPN (a VPN is a Virtual Private Network. It is how you can access the MSI remotely.) The university recommends using Cisco AnyConnect. Here are the steps to set up a Cisco VPN. The hyperlink will also be in the footnotes (<a href="https://it.umn.edu/services-technologies/virtual-private-network-vpn" class="uri">https://it.umn.edu/services-technologies/virtual-private-network-vpn</a>). Follow the URL hyperlink in the previous sentence. You will be brought to a page that all the downloads for different operating systems as shown below. Locate the download for your operating system and click “Download”. The download file should take a few seconds to fully download. The next steps will depend on the OS you are using.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="installvpn.html#cb4-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&#39;/home/christian/Research/sopsite/Anyconnect_Downloads.png&#39;</span>)</span></code></pre></div>
-<img src="Anyconnect_Downloads.png" width="476" />
-
-<p></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="installvpn.html#cb5-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&#39;./Images/Anyconnect_Downloads.png&#39;</span>)</span></code></pre></div>
+<img src="Images/Anyconnect_Downloads.png" width="476" />
 </div>
-<div id="windows" class="section level2">
+<div id="windows" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Windows</h2>
-<div id="installing-anyconnect" class="section level3">
+<div id="installing-anyconnect" class="section level3" number="4.2.1">
 <h3><span class="header-section-number">4.2.1</span> Installing AnyConnect</h3>
 <ol style="list-style-type: decimal">
 <li>Right click the zipped file that was downloaded to your Downloads folder and ‘Extract all’.</li>
@@ -197,13 +236,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>A pop up will display the installation progress and then eventually when the process is complete.</li>
 </ol>
 </div>
-<div id="connecting-to-umn-vpn" class="section level3">
+<div id="connecting-to-umn-vpn" class="section level3" number="4.2.2">
 <h3><span class="header-section-number">4.2.2</span> Connecting to UMN VPN</h3>
 <ol style="list-style-type: decimal">
 <li><p>Navigate to Cisco AnyConnect Secure Mobility Client from the Start menu. Start menu button in Windows 10 &gt; All apps &gt; Cisco &gt; Cisco AnyConnect Secure Mobility Client</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="installvpn.html#cb5-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&#39;/home/christian/Research/sopsite/Win_anyconnect.png&#39;</span>)</span></code></pre></div>
-<p><img src="Win_anyconnect.png" width="683" /></p>
-<p></p></li>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="installvpn.html#cb6-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&#39;./Images/Win_anyconnect.png&#39;</span>)</span></code></pre></div>
+<p><img src="Images/Win_anyconnect.png" width="683" /></p></li>
 <li><p>Select your connection preference from the drop-down menu.</p></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
@@ -215,16 +253,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 </div>
 </div>
-<div id="mac" class="section level2">
+<div id="mac" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Mac</h2>
-<div id="installing-anyconnect-1" class="section level3">
+<div id="installing-anyconnect-1" class="section level3" number="4.3.1">
 <h3><span class="header-section-number">4.3.1</span> Installing AnyConnect</h3>
 <ol style="list-style-type: decimal">
 <li>Find and open the anyconnect-mac-[version]-repack-signed.pkg installer package in your Downloads folder.</li>
 <li>Follow the steps in the UMN Cisco AnyConnect Installer until the installation is complete. See the General tab in System Preferences to Allow the Cisco Extension.</li>
 </ol>
 </div>
-<div id="connecting-to-umn-vpn-1" class="section level3">
+<div id="connecting-to-umn-vpn-1" class="section level3" number="4.3.2">
 <h3><span class="header-section-number">4.3.2</span> Connecting to Umn VPN</h3>
 <ol style="list-style-type: decimal">
 <li>Navigate to Cisco AnyConnect Secure Mobility Client from file ‘Finder’</li>
@@ -239,9 +277,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 </div>
 </div>
-<div id="linux" class="section level2">
+<div id="linux" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Linux</h2>
-<div id="installing-anyconnect-2" class="section level3">
+<div id="installing-anyconnect-2" class="section level3" number="4.4.1">
 <h3><span class="header-section-number">4.4.1</span> Installing AnyConnect</h3>
 <ol style="list-style-type: decimal">
 <li>Before moving forward with the installation open terminal and run the following commands. to make sure linux is up to date for the installation and has all of the necessary dependencies.</li>
@@ -265,10 +303,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Next, in the unzipped folder navigate to the directory called ‘dart’. install dart via command line using “sudo ./dart_install.sh.”</li>
 </ol>
 
-
-<p>MSI questions are answered </p>
-
-
 </div>
 </div>
 </div>
@@ -278,7 +312,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="VPN.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="accessing-cmrr.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="MSI.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
